@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesan Tiket Bioskop</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Pesan Tiket Bioskop Online</h1>
+            <p>Isi formulir berikut untuk melanjutkan pemesanan tiket Anda</p>
+        </div>
+        
+        <form id="ticketBookingForm">
+            <div class="form-group">
+                <label for="name">Nama</label>  
+                <input type="text" id="name" placeholder="Masukkan nama lengkap" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="nim">Email</label>
+                <input type="text" id="nim" placeholder="Masukkan alamat email" required>
+            </div>
+            
+            <div class="form-group">
+                <label>Jenis Tiket:</label>
+                <div class="radio-group">
+                    <label class="radio-option">
+                        <input type="radio" name="peminatan" value="Programming" checked>
+                        <span class="radio-custom"></span>
+                        Reguler
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="peminatan" value="Desain">
+                        <span class="radio-custom"></span>
+                        VIP
+                    </label>
+                    <label class="radio-option">
+                        <input type="radio" name="peminatan" value="Jaringan">
+                        <span class="radio-custom"></span>
+                        Platinum
+                    </label>
+                </div>
+            </div>
+            
+            <div class="form-group">
+                <label for="angkatan">Judul Film</label>
+                <select id="angkatan" required>
+                    <option value="">Pilih Film</option>
+                    <option value="Dune: Part Two">Dune: Part Two</option>
+                    <option value="Kingdom of the Planet of the Apes">Kingdom of the Planet of the Apes</option>
+                    <option value="Inside Out 2">Inside Out 2</option>
+                    <option value="Deadpool & Wolverine">Deadpool & Wolverine</option>
+                </select>
+            </div>
+            
+            <div class="form-group">
+                <label for="tanggal">Tanggal Penayangan</label>
+                <input type="date" id="tanggal" required>
+            </div>
+            
+            <div class="form-group">
+                <label for="alamat">Alamat</label>
+                <textarea id="alamat" placeholder="Tulis alamat lengkap" rows="4" required></textarea>
+            </div>
+            
+            <button type="submit" class="submit-btn">Kirim Pendaftaran</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
