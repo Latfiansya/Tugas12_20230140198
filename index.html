@@ -21,25 +21,25 @@
             </div>
             
             <div class="form-group">
-                <label for="nim">Email</label>
-                <input type="text" id="nim" placeholder="Masukkan alamat email" required>
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Masukkan alamat email" required>
             </div>
             
             <div class="form-group">
                 <label>Jenis Tiket:</label>
                 <div class="radio-group">
                     <label class="radio-option">
-                        <input type="radio" name="peminatan" value="Programming" checked>
+                        <input type="radio" name="tiket" value="Reguler" checked>
                         <span class="radio-custom"></span>
                         Reguler
                     </label>
                     <label class="radio-option">
-                        <input type="radio" name="peminatan" value="Desain">
+                        <input type="radio" name="tiket" value="VIP">
                         <span class="radio-custom"></span>
                         VIP
                     </label>
                     <label class="radio-option">
-                        <input type="radio" name="peminatan" value="Jaringan">
+                        <input type="radio" name="tiket" value="Platinum    ">
                         <span class="radio-custom"></span>
                         Platinum
                     </label>
@@ -47,8 +47,8 @@
             </div>
             
             <div class="form-group">
-                <label for="angkatan">Judul Film</label>
-                <select id="angkatan" required>
+                <label for="film">Judul Film</label>
+                <select id="film" required>
                     <option value="">Pilih Film</option>
                     <option value="Dune: Part Two">Dune: Part Two</option>
                     <option value="Kingdom of the Planet of the Apes">Kingdom of the Planet of the Apes</option>
@@ -64,7 +64,7 @@
             
             <div class="form-group">
                 <label for="specialRequest">Permintaan Khusus (opsional)</label>
-                <textarea id="alamat" placeholder="Contoh: Kursi dekat jendela, kursi di baris depan" rows="4" required></textarea>
+                <textarea id="specialRequest" placeholder="Contoh: Kursi dekat jendela, kursi di baris depan" rows="3"></textarea>
             </div>
             
             <button type="submit" class="submit-btn">Pesan Tiket</button>

@@ -1,13 +1,13 @@
-document.getElementById('registrationForm').addEventListener('submit', function(e) {
+document.getElementById('ticketBookingForm').addEventListener('submit', function(e) {
     e.preventDefault();
     
     // Mengambil nilai dari form
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
-    const peminatan = document.querySelector('input[name="peminatan"]:checked').value;
-    const angkatan = document.getElementById('angkatan').value;
+    const tiket = document.querySelector('input[name="tiket"]:checked').value;
+    const film = document.getElementById('film').value;
     const tanggal = document.getElementById('tanggal').value;
-    const alamat = document.getElementById('alamat').value;
+    const specialRequest = document.getElementById('specialRequest').value;
     
     // Format tanggal untuk ditampilkan
     const formattedDate = formatDate(tanggal);
@@ -16,10 +16,10 @@ document.getElementById('registrationForm').addEventListener('submit', function(
     alert(
         `Nama : ${name}\n` +
         `Email : ${email}\n` +
-        `Jenis Tiket : ${peminatan}\n` +
-        `Judul Film : ${angkatan}\n` +
+        `Jenis Tiket : ${tiket}\n` +
+        `Judul Film : ${film}\n` +
         `Tanggal : ${formattedDate}\n` +
-        `Alamat : ${alamat}`
+        `Permintaan Khusus : ${specialRequest}`
     );
 });
 
